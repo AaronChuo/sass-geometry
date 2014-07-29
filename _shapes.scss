@@ -49,14 +49,18 @@
 	
 }
 
-@mixin triangle-SAS ($left-side, $angle, $right-side) {
-	
+@mixin triangle-SAS ($left-side, $angle, $right-side, $color) {
+
 	.triangle {
+        background: -webkit-linear-gradient(left top, transparent 50%, $color 50%), transparent;
+        background: linear-gradient(-45deg, transparent 50%, $color 50%), transparent;
+        // border-top-left-radius: 50%;
+        // -webkit-border-top-left-radius: 50%;
 		height: $right-side;
-		transform: rotate(#{$angle + 45}deg);
-		-ms-transform: rotate(#{$angle + 45}deg); /* IE 9 */
-		-webkit-transform: rotate(#{$angle + 45}deg); /* Opera, Chrome, and Safari */
+		transform: rotate(#{$angle + 45deg});
+		-ms-transform: rotate(#{$angle + 45deg}); /* IE 9 */
+		-webkit-transform: rotate(#{$angle + 45deg}); /* Opera, Chrome, and Safari */
 		width: $left-side;
 	}
-	
+
 }
