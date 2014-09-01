@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+/* 
+	Polygons includes Regular Polygons and Other Common Polygons.
+*/
+
+/* Regular Polygons */
+//三角形
+@mixin triangle-SAS ($left-side, $angle, $right-side, $color) {
+    background: -webkit-linear-gradient(left top, transparent 50%, $color 50%), transparent;
+    background: linear-gradient(-45deg, transparent 50%, $color 50%), transparent;
+    // border-top-left-radius: 50%;
+    // -webkit-border-top-left-radius: 50%;
+	height: $right-side;
+	// transform: rotate(#{$angle + 45deg});
+	// -ms-transform: rotate(#{$angle + 45deg});
+	// -webkit-transform: rotate(#{$angle + 45deg});
+	width: $left-side;
+}
+
+//正方形
+@mixin square () {
+
+}
+
+//正五邊形
+@mixin pentagon () {
+
+}
+
+//正六邊形
+@mixin hexagon ($bg, $w-l, $w-m, $w-r, $h) {
+
+}
+
+//正七邊形
+@mixin heptagon () {
+
+}
+
+//正八邊形
+@mixin octagon () {
+
+}
+
+//正九邊形
+@mixin nonagon () {
+
+}
+
+//正十邊形
+@mixin decagon () {
+
+}
+
+/* Common Polygons */
+//凸四邊形(Convex Quadrilateral)
+@mixin quadrilateral () {
+
+}
+
+//長方形
+@mixin rectagle () {
+
+}
+
+//梯形
+@mixin trapezium () {
+
+}
+
+//平行四邊形
+@mixin parallelogram () {
+
+}
+
+//箏形
+@mixin kite () {
+
+}
+
+//菱形
+@mixin rhombus () {
+	
+}
+
+
+/*
+	Curved Shapes
+*/
+
+@mixin circle () {
+
+}
+
+@mixin oval ($bg, $w, $h , $x, $y) {
+	background: #{$bg};
+	border-radius: #{$x} / #{$y};
+	-webkit-border-radius: #{$x} / #{$y};
+	-moz-border-radius: #{$x} / #{$y};
+	height: $h;
+	width: $w;
+}
