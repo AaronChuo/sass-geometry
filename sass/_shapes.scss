@@ -5,14 +5,18 @@
 
 
 
-
-
-
 /* 
 	Polygons includes Regular Polygons and Other Common Polygons.
 */
 
 /* Regular Polygons */
+
+/* $edges must be equal or above 3 edge */
+/* $edge-length must be above 0 */
+@mixin polygon($edges, $edge-length) {
+	
+}
+
 //三角形
 @mixin triangle-SAS ($left-side, $angle, $right-side, $color) {
     background: -webkit-linear-gradient(left top, transparent 50%, $color 50%), transparent;
@@ -26,40 +30,40 @@
 	width: $left-side;
 }
 
-//正方形
-@mixin square () {
+// //正方形
+// @mixin square () {
 
-}
+// }
 
-//正五邊形
-@mixin pentagon () {
+// //正五邊形
+// @mixin pentagon () {
 
-}
+// }
 
-//正六邊形
-@mixin hexagon ($bg, $w-l, $w-m, $w-r, $h) {
+// //正六邊形
+// @mixin hexagon ($bg, $w-l, $w-m, $w-r, $h) {
 
-}
+// }
 
-//正七邊形
-@mixin heptagon () {
+// //正七邊形
+// @mixin heptagon () {
 
-}
+// }
 
-//正八邊形
-@mixin octagon () {
+// //正八邊形
+// @mixin octagon () {
 
-}
+// }
 
-//正九邊形
-@mixin nonagon () {
+// //正九邊形
+// @mixin nonagon () {
 
-}
+// }
 
-//正十邊形
-@mixin decagon () {
+// //正十邊形
+// @mixin decagon () {
 
-}
+// }
 
 /* Common Polygons */
 //凸四邊形(Convex Quadrilateral)
